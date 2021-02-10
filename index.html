@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Paris Landing Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="about">
+            <h1>P A R I S</h1>
+            <p>Check out <a href="#">more</a> about the city of light</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    gsap.fromTo(".about", { width: 0 }, { duration: 1.5, width:  "100%"});
+    
+    gsap.fromTo(
+        "h1",
+        { y: 50, opacity: 0 },
+        { duration: 1.2, delay: 1.2, y: 0, opacity: 1 }
+      );
+
+    gsap.fromTo(
+        "p",
+        { y: 50, opacity: 0 },
+        { duration: 1.2, delay: 1.5, y: 0, opacity: 1 }
+      );
+</script>
+
+</html>
