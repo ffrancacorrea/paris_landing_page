@@ -18,7 +18,8 @@ a{
     margin: 0;
     padding: 0;
     height: 96vh;
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg.jpg");  
+    background-size: cover;
 }
 .about{
     width: 100%;
@@ -44,5 +45,17 @@ a{
     }
     p a{
         color: #b80071;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .about {
+        width: 100%;
+        height: 55vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+        
+    h1, p{
+        width: 100%;
+    }
     }
 }
